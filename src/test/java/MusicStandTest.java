@@ -35,7 +35,7 @@ public class MusicStandTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(5.0, musicStand.calculateMarkup(musicStand.getBuyingPrice(), musicStand.getSellingPrice()), 0.0);
+        assertEquals(5.0, musicStand.calculateMarkup(musicStand.getSellingPrice(), musicStand.getBuyingPrice()), 0.0);
     }
 
 

@@ -22,4 +22,14 @@ public class Shop {
         stockList.remove(item);
     }
 
+    public Double returnTotalPotentialProfit(){
+        double total = 0;
+
+        for (ISell item : stockList){
+            total += item.calculateMarkup(item.getSellingPrice(), item.getBuyingPrice());
+        }
+
+        return total;
+    }
+
 }

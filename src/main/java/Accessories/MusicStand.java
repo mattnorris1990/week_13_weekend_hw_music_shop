@@ -32,7 +32,7 @@ public class MusicStand implements ISell {
         return material;
     }
 
-    public Double calculateMarkup(Double buyingPrice, Double sellingPrice){
+    public Double calculateMarkup(Double sellingPrice, Double buyingPrice){
         return sellingPrice - buyingPrice;
     }
 }

@@ -68,4 +68,9 @@ public class ShopTest {
         assertEquals(2, shop.getStockList().size());
     }
 
+    @Test
+    public void canReturnTotalPotentialProfit(){
+        assertEquals(455.0, shop.returnTotalPotentialProfit(), 0.0);
+    }
+
 }

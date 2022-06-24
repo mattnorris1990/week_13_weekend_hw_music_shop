@@ -32,7 +32,7 @@ public class SheetMusic implements ISell {
         return composer;
     }
 
-    public Double calculateMarkup(Double buyingPrice, Double sellingPrice){
+    public Double calculateMarkup(Double sellingPrice, Double buyingPrice){
         return sellingPrice - buyingPrice;
     }
 }
